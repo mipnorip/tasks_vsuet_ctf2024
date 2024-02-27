@@ -2,6 +2,7 @@ version: '2'
 
 services:
   robots:
+    restart: always
     image: httpd:latest
     ports:
       - 80:80
@@ -10,6 +11,7 @@ services:
       - ./robots/httpd.conf:/usr/local/apache2/conf/httpd.conf
 
   broken_wiki:
+    restart: always
     build:
       context: wiki
     ports:
@@ -20,6 +22,7 @@ services:
       context: angry_bot
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
+    restart: always
 
   
   

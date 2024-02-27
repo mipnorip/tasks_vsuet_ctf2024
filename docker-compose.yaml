@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  robots:
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./robots/static:/usr/local/apache2/htdocs
+      - ./robots/httpd.conf:/usr/local/apache2/conf/httpd.conf
+
+  broken_wiki:
+    build:
+      context: wiki
+    ports:
+      - 3000:3000
+    
+  angry_bot:
+    build:
+      context: angry_bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+
+  
+  
+
+networks:
+    default:
+    internal:
+        internal: true

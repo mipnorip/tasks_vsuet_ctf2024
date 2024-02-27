@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>ROBOTS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="headerBody">
+
+                <div class="headerBurger">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="headerMenu">
+                    <ul class="headerList">
+                        <div class="headerMenuList">
+                            <li><a href="#home" class="headerLink smoothScroll">10</a></li>
+                            <li><a href="#about" class="headerLink smoothScroll">1001</a></li>
+                            <li><a href="#prepare" class="headerLink smoothScroll">10101</a></li>
+                            <li><a href="#" class="headerLink smoothScroll">101011</a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modalContent">
+            <div class="modalImg">
+                <img id="newsImage" src="" alt="Изображение новости">
+            </div>
+
+            <div class="modalInfo">
+                <h2 id="newsTitle"></h2>
+                <h3 id="newsDate"></h3>
+
+                <p id="newsDescription"></p>
+            </div>
+            <span class="close" id="closeModalBtn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.1665 9.00805L17.762 1.43822C18.0793 1.11791 18.0793 0.598995 17.762 0.278681C17.4503 -0.0473594 16.9355 -0.0571515 16.6118 0.256802L9.01628 7.82663L1.51839 0.256802C1.36467 0.0928811 1.15078 0 0.927025 0C0.703266 0 0.489378 0.0928811 0.335658 0.256802C0.0543006 0.566276 0.0543006 1.04123 0.335658 1.35071L7.83354 8.9096L0.238001 16.4685C-0.0793336 16.7888 -0.0793336 17.3077 0.238001 17.628C0.389074 17.784 0.596845 17.871 0.813092 17.8687C1.03351 17.8867 1.25202 17.8159 1.42074 17.6718L9.01628 10.102L16.6118 17.7593C16.7629 17.9153 16.9707 18.0022 17.1869 18C17.4029 18.001 17.6102 17.9142 17.762 17.7593C18.0793 17.439 18.0793 16.9201 17.762 16.5998L10.1665 9.00805Z"
+                        fill="white" />
+                </svg>
+
+            </span>
+        </div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="homeContent">
+                <div class="homeTitle">
+                    <img src="img/home.svg" alt="home" />
+                </div>
+
+                <div class="homeText">
+                    <p>люди были, а теперь здесь роботы. Блип, блоп</p>
+                </div>
+
+                <div class="homeFooter">
+                    <a href="#" class="headerBtn" disable>Захватить человечество</a>
+
+                    <p>Будь аккуратнее, они могут быть не готовы к нападению</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="news" style="display:none;">
+        <div class="container">
+            <div class="titleSection titleSectionLeft">
+                <h2>новости</h2>
+                <img src="img/components/numbers/01.png" alt="">
+            </div>
+
+            <div class="newsContainer">
+                <a href="#" class="newsBlock openModalBtn" data-news="Новость 1" data-description="Описание новости 1"
+                    data-image="img/news/unsplash_J5yoGZLdpSI.jpg" data-date="2024-02-17">
+                    <div class="newsBlockMask">
+                        <h2>Название</h2>
+                    </div>
+                    <img src="img/news/unsplash_J5yoGZLdpSI.jpg" alt="">
+                </a>
+
+                <a href="#" class="newsBlock">
+                    <div class="newsBlockMask">
+                        <h2>Название</h2>
+                    </div>
+                    <img src="img/news/unsplash_J5yoGZLdpSI.jpg" alt="">
+                </a>
+
+                <a href="#" class="newsBlock">
+                    <div class="newsBlockMask">
+                        <h2>Название</h2>
+                    </div>
+                    <img src="img/news/unsplash_J5yoGZLdpSI.jpg" alt="">
+                </a>
+
+                <a href="#" class="newsBlock">
+                    <div class="newsBlockMask">
+                        <h2>Название</h2>
+                    </div>
+                    <img src="img/news/unsplash_J5yoGZLdpSI.jpg" alt="">
+                </a>
+
+                <a href="#" class="newsBlock">
+                    <div class="newsBlockMask">
+                        <h2>Название</h2>
+                    </div>
+                    <img src="img/news/unsplash_J5yoGZLdpSI.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="titleSection titleSectionRight">
+                <h2>Об организаторах</h2>
+
+            </div>
+
+            <div class="aboutOrganizers">
+                <div class="aboutOrganizersImg">
+                    <img src="img/robots/mesm.png" alt="mesm">
+                </div>
+
+                <div class="aboutOrganizersText">
+                    <p>Первая советская электронно-вычислительная машина была сконструирована и введена в эксплуатацию
+                        недалеко от города Киева. С появлением первого компьютера в Союзе и на территории
+                        континентальной Европы связывают имя Сергея Лебедева (1902-1974 гг.). В 1997 году ученая мировая
+                        общественность признала его пионером вычислительной техники, и в том же году Международное
+                        компьютерное общество выпустило медаль с надписью: «С.А. Лебедев — разработчик и конструктор
+                        первого компьютера в Советском Союзе. Основоположник советского компьютеростроения». Всего при
+                        непосредственном участии академика было создано 18 электронно-вычислительных машин, 15 из
+                        которых переросли в серийное производство.</p>
+                </div>
+            </div>
+            <div class="aboutOrganizers reverse">
+                <div class="aboutOrganizersText">
+                    <p>Комплекс для управления РЛС дальнего обнаружения и сопровождения цели и точного наведения
+                        противоракеты на баллистическую ракету противника. В марте 1961 г. на этом комплексе впервые в
+                        мире была ликвидирована боевая часть баллистической ракеты осколочным зарядом противоракеты. За
+                        эти работы коллектив ведущих разработчиков комплекса был удостоен Ленинской премии, в том числе
+                        академик С. А. Лебедев и В. С. Бурцев. Впервые были предложены принципы распараллеливания
+                        вычислительного процесса за счёт аппаратных средств.</p>
+                </div>
+
+                <div class="aboutOrganizersImg">
+                    <img src="./img/robots/pk2.jpg" alt="rtm-group">
+                </div>
+            </div>
+
+            <div class="aboutOrganizers">
+                <div class="aboutOrganizersImg">
+                    <img src="./img/robots/chernenkis.jpg" alt="forenzika">
+                </div>
+
+                <div class="aboutOrganizersText">
+                    <p>Червоненкис
+                        В честь Алексея Червоненкиса, одного из крупнейших теоретиков машинного обучения.<br>
+                        19 место Top 500, ноябрь 2021<br>
+                        Количество узлов: 199<br>
+                        Мощность 21 530 Тфлопс
+                        Ядра 25; 472 GPU; <br>
+                        1 592 NVIDIA A100 80G<br>
+                        Оперативная память 199 ТБ<br>
+                        Энергопотребление 583кВт</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="prepare">
+        <div class="container">
+            <div class="titleSection titleSectionLeft">
+                <h2>Как подготовиться</h2>
+                <img src="img/components/numbers/03.png" alt="">
+            </div>
+
+            <div class="howPrepareContainer">
+                <div class="howPrepareBlock">
+                    <p>Послушайте речь нашего представителя, она очень понятно все рассказала</p>
+
+                    <a href="https://www.youtube.com/watch?v=yPwjUAIGfJw" class="howPrepareBtn"
+                        target="_blank">Перейти</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        
+
+        <div class="footerBottom">
+            <div class="container">
+                <p>@vsuetCTF2024 | Все права защищены. Люди побеждены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

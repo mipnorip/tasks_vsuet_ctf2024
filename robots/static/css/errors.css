@@ -1,0 +1,58 @@
+.errorPage{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;   
+}
+
+.errorPageContent{
+    color: #fff;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.errorPageContent h1{
+    font-size: 128px;
+    color: #1A9700;
+}
+
+.errorPageContent h2{
+    font-size: 26px;
+    margin-top: -20px;
+    color: #1A9700;
+}
+
+.errorText{
+    margin-top: 30px;
+}
+
+.errorText P{
+    margin-top: 10px;
+    width: 420px;
+}
+
+.errorText p a{
+    color: #1A9700;
+}
+
+@media(min-width: 320px) and (max-width: 550px){
+
+    .errorPageContent h1{
+        font-size: 98px;
+    }
+    
+    .errorPageContent h2{
+        font-size: 18px;
+    }
+
+    .errorText{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+ 
+    .errorText P{
+        width: 90%;
+    }
+}
